@@ -46,6 +46,7 @@ var agenda =  Vue.component('agenda', {
         <div class= "card-body">
             <ul class="list-group">
                <agenda-list-item></agenda-list-item>
+               <agenda-list-item></agenda-list-item>
             </ul>
         </div>
     </div>

@@ -42,18 +42,18 @@ var daysOpenedDash =  Vue.component('days-opened-dash', {
         <div class='row'>
             <!-- Chart -->
             <div class="col-md-12">
-                <div class="card bg-cyan text-white">
+                <div class="card bg-dark text-secondary">
                     <div class="card-body ">
                         <div class="row ">
                             <div class="col-6 m-t-40">
                                 <h3>&nbsp;</h3>
                                 <div class="display-4">{{openedNumber}}</div>
-                                <p class="text-white">OSs em aberto</p>
+                                <p class="">OSs em aberto</p>
                             </div>
                             <div class="col-6 text-right">
                                 <h1 class="m-b-"><i class="mdi mdi-calendar"></i></h1>
-                                <b class="text-white">{{diaSemana}}</b>
-                                <p class="op-7 text-white">{{dia}} {{mes}}</p>
+                                <b class="">{{diaSemana}}</b>
+                                <p class="op-7 ">{{dia}} {{mes}}</p>
                             </div>
                         </div>
                     </div>

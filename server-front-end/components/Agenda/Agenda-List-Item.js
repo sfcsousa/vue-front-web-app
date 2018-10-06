@@ -6,7 +6,10 @@ var agendaListItem =  Vue.component('agenda-list-item', {
             projeto: {
                 desc : "Sfera Workflow"
             },
-            dia: "19"
+            dadosOS: "Lorem ipsum dolor sit amet, assarhoncus volutpat. Praesent.",
+            dia: "19",
+            status: "Apontado",
+            data: "10/09/2019"
         }
     },
     computed: {
@@ -37,30 +40,42 @@ var agendaListItem =  Vue.component('agenda-list-item', {
 
     },
     template: `
-    <li class="media my-4 list-group-item ">
-        <div class="media-body">
-            <div class="row">
-                <div class='col-md-4'>
-                    <p>{{dia}}</p> 
+    <li class="list-group">
+        <div class="card">
+            <div class="card-body">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class='col-xs-6 col-md-3 col-lg-2'>
+                            <p class="display-4">{{dia}}</p>                             
+                            <small class="form-control-feedback"> Data Conferencia</small>
+                            <p class="text-left ">{{data}}</p>   
+                        </div>
+                        <div class='col-xs-6 col-md-3 col-lg-2'>
+                            <small class="form-control-feedback"> Data Digito</small>
+                            <p class="text-left ">{{data}}</p>                             
+                            <small class="form-control-feedback"> Data Cadastro</small>
+                            <p class="text-left ">{{data}}</p>   
+                        </div>
+                        <div class='col-xs-6 col-md-6 col-lg-4'>                        
+                            <small class="form-control-feedback"> Dados da OS</small>
+                            <p >{{dadosOS}}</p>                                              
+                            <small class="form-control-feedback">Projeto</small>
+                            <p>{{projeto.desc}}</p>
+                        </div>
+                        <div class='col-xs-6 col-md-6 col-lg-1'>                                            
+                        </div>
+                        <div class='col-xs-6 col-md-6 col-lg-3'>
+                            <status-os status="status"></status-os>                                                     
+                        </div>
+                    </div>                   
                 </div>
-                <div class='col-md-4'>
-                    <p>Dados OS: </p> {{dadosOS}}
+            </div>
+            <div class="card-footer ">
+                <div class="text-right ">
+                    <a href="javascript:void(0)" class="btn btn-primary">Consultar/Alterar</a>
+                    <a href="javascript:void(0)" class="btn btn-info">Apontar</a>
                 </div>
-                <div class='col-md-4'>
-                    <p>Status</p>
-                </div>
-            </div>                    
-            <div class="row">
-                <div class='col-md-4'>
-                    <p>Projeto: </p> {{projeto.desc}}
-                </div>
-                <div class='col-md-4'>
-                    <p>Cliente: </p> {{dadosOS}}
-                </div>
-                <div class='col-md-4'>
-                    <p>A&ccedil;&otilde;es:  </p>
-                </div>
-            </div>      
+            </div>            
         </div>
     </li>
     `

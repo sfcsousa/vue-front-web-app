@@ -73,10 +73,10 @@
                         <!-- ============================================================== -->
                         <ul class="navbar-nav mr-auto">
                             <!-- This is  -->
-                            <!--li class="nav-item"> <a class="nav-link nav-toggler d-block d-sm-none waves-effect waves-dark"
+                            <li class="nav-item"> <a class="nav-link nav-toggler d-block d-sm-none waves-effect waves-dark"
                                     href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
                             <li class="nav-item"> <a class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark"
-                                    href="javascript:void(0)"><i class="icon-menu"></i></a> </li-->
+                                    href="javascript:void(0)"><i class="icon-menu"></i></a> </li>
                             <!-- ============================================================== -->
                             <!-- Search -->
                             <!-- ============================================================== -->
@@ -241,10 +241,9 @@
                     <!-- ============================================================== -->
                     <!--Row-->
                     <div class="row">
-                        <div class="col-xs-12 col-md-9">
+                        <div class="col-xs-12 col-sm-12 col-lg-9">
                             <router-view></router-view>                            
-                        </div>
-                        
+                        </div>                        
                         <days-opened-dash></days-opened-dash>
                     </div>
                     <!-- Row -->
@@ -363,16 +362,17 @@
     <script src="static/dist/js/Vue/vue.js"></script>
     <script src="static/dist/js/Vue/vuex.min.js"></script>
     <script src="static/dist/js/Vue/vue-router.js"></script>
+    <script src="static/dist/js/Vue/axios.min.js"></script>
 
     <script src="components/storeConfig.js"></script>
     
     <script src="components/Foo/foo.js"></script>
+    <script src="components/fragmentos/StatusOs.js"></script>
     <script src="components/OS/Os_add.js"></script>
     <script src="components/LeftSideBar/LeftSideBar.js"></script>
     <script src="components/Dashboards/DaysOpened.js"></script>
     <script src="components/Agenda/Agenda-List-Item.js"></script>
     <script src="components/Agenda/Agenda.js"></script>
-
 
     <script src="components/Routes/Routes.js"></script>
     <script src="components/app.js"></script>
